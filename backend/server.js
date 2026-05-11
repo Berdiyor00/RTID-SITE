@@ -58,8 +58,7 @@ app.post('/api/crm/contact', async (req, res) => {
       });
     }
 
-    // Create lead
-    const newLead = {
+    const newContact = {
       id: Date.now().toString(),
       name,
       email,
@@ -68,15 +67,11 @@ app.post('/api/crm/contact', async (req, res) => {
       message,
       timestamp: timestamp || new Date().toISOString(),
       source: source || 'Website',
-      status: 'new',
       createdAt: new Date()
     };
 
-    // Save to CRM
-    crmData.leads.push(newLead);
-    contactSubmissions.push(newLead);
+    contactSubmissions.push(newContact);
 
-    // Send notification email
     try {
       await transporter.sendMail({
         from: process.env.EMAIL_USER,
@@ -91,18 +86,17 @@ app.post('/api/crm/contact', async (req, res) => {
           <p><strong>Xabar:</strong></p>
           <p>${message}</p>
           <p><strong>Vaqt:</strong> ${new Date().toLocaleString('uz-UZ')}</p>
-          <p><strong>Manba:</strong> ${source}</p>
+          <p><strong>Manba:</strong> ${newContact.source}</p>
         `
       });
     } catch (emailError) {
       console.error('Email sending failed:', emailError);
-      // Don't fail the request if email fails
     }
 
     res.status(200).json({
       success: true,
       message: 'Murojaat muvaffaqiyatli qabul qilindi',
-      leadId: newLead.id
+      contactId: newContact.id
     });
 
   } catch (error) {

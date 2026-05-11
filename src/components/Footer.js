@@ -16,7 +16,7 @@ function Footer() {
           <div className="footer-section">
             <h4>Xizmatlar</h4>
             <ul>
-              <li><a href="#services">Web Dизайн</a></li>
+              <li><a href="#services">Web Dizayn</a></li>
               <li><a href="#services">Mobil Ilovalari</a></li>
               <li><a href="#services">Bulutli Xizmatlar</a></li>
               <li><a href="#services">Xavfsizlik</a></li>

@@ -6,7 +6,7 @@ function Services() {
     {
       id: 1,
       icon: '🖥️',
-      title: 'Web Dизайн',
+      title: 'Web Dizayn',
       description: 'Zamonaviy va reaksiyaviy veb-saytlar yaratish'
     },
     {

@@ -20,12 +20,11 @@ function Hero() {
         </h1>
         
         <p className="hero-subtitle">
-          Saatli xizmatlar va raqamli yechimlar bilan sizning biznesingizni kengaytiring
+          Sifatli xizmatlar va raqamli yechimlar bilan biznesingizni kengaytiring
         </p>
         
         <div className="hero-buttons">
-          <button className="btn btn-primary">Biz haqida</button>
-          <button className="btn btn-secondary">Bog'lanish</button>
+          <a href="#contacts" className="btn btn-secondary">Bog'lanish</a>
         </div>
 
         <div className="hero-stats">

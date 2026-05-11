@@ -7,33 +7,33 @@ function Addresses() {
   const addresses = [
     {
       id: 1,
-      city: 'Toshkent',
-      address: 'Qashqadaryo viloyati Koson tumani Uch qirra  Mo\'ljal Yoshlar bog\'i ro\'parasida, RTID ofisi',
+      city: 'RTID Ofisi',
+      address: 'Qashqadaryo viloyati Koson tumani Yoshlar bog\'i ro\'parasida, RTID ofisi',
       phone: '+998 99 666 88 66',
       email: 'rtid.uz@gmail.com',
-      hours: 'Dushanba - Juma: 9:00 - 18:00',
-      latitude: 41.2995,
-      longitude: 69.2401
+      hours: 'Dushanba - Juma: 8:00 - 20:00',
+      latitude: 39.04327941064052,
+      longitude: 65.5856784014394
     },
     {
       id: 2,
-      city: 'Samarqand',
-      address: 'Qashqadaryo viloyati Koson tumani Uch qirra  Mo\'ljal Yoshlar bog\'i, RTID ofisi',
+      city: 'Uch qirra',
+      address: 'Qashqadaryo viloyati Koson tumani Uch qirra Madaniyat markazi 2-qavatida',
       phone: '+998 99 666 88 66',
       email: 'rtid.uz@gmail.com',
-      hours: 'Dushanba - Juma: 9:00 - 17:00',
-      latitude: 39.6548,
-      longitude: 66.9597
+      hours: 'Dushanba - Juma: 8:00 - 20:00',
+      latitude: 39.04327941064052,
+      longitude: 65.5856784014394
     },
     {
       id: 3,
-      city: 'Buxoro',
-      address: '789 Digital Hub, Ark ko\'chasi, Buxoro',
-      phone: '+998 65 225 00 88',
-      email: 'bukhara@rtid.uz',
-      hours: 'Dushanba - Juma: 9:00 - 17:00',
-      latitude: 39.7747,
-      longitude: 64.4161
+      city: 'Kellej',
+      address: 'Qashqadaryo viloyati Koson tumani 1-sonli kasb hunar texnikumi',
+      phone: '+998 99 666 88 66',
+      email: 'rtid.uz@gmail.com',
+      hours: 'Dushanba - Juma: 8:00 - 20:00',
+      latitude: 39.03084315661132,
+      longitude: 65.61275081114512
     }
   ];
 
@@ -42,7 +42,7 @@ function Addresses() {
       <div className="container">
         <div className="section-header">
           <h2>Bizning Ofislar</h2>
-          <p>Butun davlat bo'ylab IT xizmatlarini taqdim etamiz</p>
+          <p>Qashqadaryo viloyati bo'ylab IT xizmatlarini taqdim etamiz</p>
         </div>
 
         <div className="addresses-grid">

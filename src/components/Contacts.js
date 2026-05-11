@@ -43,7 +43,7 @@ function Contacts() {
 
       if (response.ok) {
         await response.json();
-        setSubmitMessage('✅ Xabaringiz muvaffaqiyatli yuborildi! Tez orada siz bilan bog\'lanamiz.');
+        setSubmitMessage('✅ Murojaatingiz yuborildi. Tez orada siz bilan bog\'lanamiz.');
         setFormData({
           name: '',
           email: '',
@@ -76,12 +76,12 @@ function Contacts() {
     {
       icon: '🕐',
       title: 'Ish vaqti',
-      value: 'Dushanba - Juma: 9:00 - 18:00'
+      value: 'Dushanba - Juma: 8:00 - 20:00'
     },
     {
       icon: '📍',
       title: 'Manzil',
-      value: "Qashqadaryo viloyati Koson tumani Uch qirra  Mo'ljal Yoshlar bog'i, RTID ofisi"
+      value: "Qashqadaryo viloyati Koson tumani Uch qirra Madaniyat markazi 2-qavati, Mo'ljal Yoshlar bog'i RTID ofisi"
     }
   ];
 
@@ -89,8 +89,8 @@ function Contacts() {
     <section id="contacts" className="contacts">
       <div className="container">
         <div className="section-header">
-          <h2>Biz bilan Bog'lanin</h2>
-          <p>Sizning savollarini va takliflarini kutamiz</p>
+          <h2>Biz bilan Bog'laning</h2>
+          <p>Sizning savollaringizni va takliflaringizni kutamiz</p>
         </div>
 
         <div className="contacts-content">
@@ -121,7 +121,7 @@ function Contacts() {
                 <input
                   type="email"
                   name="email"
-                  placeholder="Email"
+                  placeholder="Email manzilingiz"
                   value={formData.email}
                   onChange={handleChange}
                   required
@@ -131,7 +131,7 @@ function Contacts() {
                 <input
                   type="tel"
                   name="phone"
-                  placeholder="Telefon"
+                  placeholder="Telefon raqamingiz"
                   value={formData.phone}
                   onChange={handleChange}
                 />
@@ -174,10 +174,10 @@ function Contacts() {
       </div>
 
       <div className="social-links">
-        <a href="#facebook" className="social-btn">f</a>
-        <a href="#twitter" className="social-btn">𝕏</a>
-        <a href="#instagram" className="social-btn">📷</a>
-        <a href="#linkedin" className="social-btn">in</a>
+        <a href="#facebook" className="social-btn"><img className="social-btn-design" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/3840px-2023_Facebook_icon.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail" alt="Facebook" /></a>
+        <a href="#twitter" className="social-btn"><img className="social-btn-design" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/3840px-Logo_of_Twitter.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail" alt="Twitter" /></a>
+        <a href="https://www.instagram.com/rtid.uz" className="social-btn"><img className="social-btn-design" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/3840px-Instagram_logo_2016.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail" alt="Instagram" /></a>
+        <a href="#linkedin" className="social-btn"><img className="social-btn-design" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/3840px-LinkedIn_icon.svg.png" alt="LinkedIn" /></a>
       </div>
     </section>
   );

@@ -197,6 +197,11 @@
   box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
 }
 
+.social-btn-design {
+  width: 30px;
+  height: 30px;
+}
+
 @media (max-width: 768px) {
   .contacts {
     padding: 60px 20px;
